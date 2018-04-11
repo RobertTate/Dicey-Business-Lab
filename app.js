@@ -24,7 +24,22 @@ class Die {
     }
     roll() {
         this.random = Math.floor(Math.random() * 6 + 1);
-        this.div.innerText = this.random;
+    // Was originally using: this.div.innerText = this.random;
+    // Changed to have the number instead display as dice:
+        if (this.random == 6) {
+            this.div.innerHTML = '&#x2685'
+        }
+        else if (this.random == 5) {
+            this.div.innerHTML = '&#x2684'
+        } else if (this.random == 4) {
+            this.div.innerHTML = '&#x2683'
+        } else if (this.random == 3) {
+            this.div.innerHTML = '&#x2682'
+        } else if (this.random == 2) {
+            this.div.innerHTML = '&#x2681'
+        } else if (this.random == 1) {
+            this.div.innerHTML = '&#x2680'
+        }
     }
 }
 
@@ -49,7 +64,7 @@ button2.addEventListener('click', function () {
 button3.addEventListener('click', function () {
     let result = 0
     for (i = 0; i < dieArray.length; i++) {
-       result += dieArray[i].random;
+        result += dieArray[i].random;
     }
     alert(result);
 })
