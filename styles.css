@@ -1,0 +1,29 @@
+div {
+    background-color: rgb(175, 175, 175);
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    line-height: 3rem;
+    font-size: 1em;
+    font-family: 'Pacifico', cursive;
+    vertical-align: middle;
+    border: 5px solid black;
+    border-radius: 1em;
+}
+
+button {
+    display: inline-block;
+    width: 6em;
+    height: 4em;
+    margin: 1rem;
+    vertical-align: middle;
+    font-family: 'Gaegu', cursive;
+    border-radius: 1em;
+}
+
+body {
+    background-color: azure;
+}
